@@ -1,3 +1,5 @@
+package ServerAndClients;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -11,7 +13,7 @@ public class ServerTime {
     public static void main(String[] args) throws IOException {
         SimpleDateFormat fm = new SimpleDateFormat("dd-MM-yyyy" + " - " + "HH:mm:ss");
 
-        System.out.println("Server established with Date & Time");
+        System.out.println("ServerAndClients.Server established with Date & Time");
 
         Date date = new Date(System.currentTimeMillis());
 

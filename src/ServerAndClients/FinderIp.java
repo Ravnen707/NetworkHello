@@ -1,3 +1,5 @@
+package ServerAndClients;
+
 import java.net.InetAddress;
 
 public class FinderIp {
