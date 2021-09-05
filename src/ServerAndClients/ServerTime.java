@@ -11,14 +11,18 @@ import java.util.Date;
 public class ServerTime {
 
     public static void main(String[] args) throws IOException {
+        // Måden tiden og datoen bliver vist på, Med dag-Måned-år - Timer-Minutter-Sekunder.
         SimpleDateFormat fm = new SimpleDateFormat("dd-MM-yyyy" + " - " + "HH:mm:ss");
 
         System.out.println("ServerAndClients.Server established with Date & Time");
 
+        // Herfra får man hvad klokken er lige nu.
         Date date = new Date(System.currentTimeMillis());
 
+        // ny serversocket tilknyttet til port 4200.
         ServerSocket sS = new ServerSocket(4200);
 
+        // Serveren venter clienten.
         Socket socket = sS.accept();
 
 
